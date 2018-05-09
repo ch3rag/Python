@@ -1,4 +1,4 @@
-from __future__ import print_function
+from __future__ import print_function # This is optional if you are using Python 2.X or Simply use sys.stdout.write()
 import sys
 
 
