@@ -4,6 +4,10 @@ vowels = {"a" , "e", "i", "o", "u", "a"}
 
 print(vowels)
 
+print("a" in vowels)
+
+# PRINTS TRUE (CHECKS MEMBERSHIP)
+
 # DUPLICATES ARE REMOVED AUTOMATICALLY
 
 a = {1, 5, 8, 9, 17, 15, 21}
