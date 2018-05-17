@@ -99,3 +99,29 @@ print(grocery_list.count("Bananas"))
 new_list = grocery_list[:]
 
 print(new_list)
+
+#GENERATING LISTS USING LAMBDAS AND LOOPS
+
+
+from __future__ import print_function
+
+oneToTen = [range(10)]
+
+print (oneToTen)
+
+squares = [x ** 2 for x in range(1,10)]
+
+print(squares)
+
+#OR
+
+squares = list(map (lambda x : x ** 2, range(1,10)))
+
+print(squares)
+
+def square (x) :
+	return x*x
+
+squares = list(map (square, range(1,10)))
+
+print(squares)
