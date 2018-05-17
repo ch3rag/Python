@@ -64,3 +64,38 @@ print(max(to_do_list_2))
 
 print(min(to_do_list_2))
 
+#EXTEND LIST
+
+new_groceries = ["APPLE", "ORANGE", "FLOUR"]
+
+grocery_list.extend(new_groceries)
+
+print(grocery_list)
+
+#POP[index] => POP LAST INSETED ELEMENT OR ith ELEMENT
+
+print(grocery_list.pop())
+
+#CLEAR ==> DELETES ALL ENTRY FROM THE LIST
+
+#new_groceries.clear() OR
+
+del new_groceries[:]
+
+print(new_groceries)
+
+#Index ==> RETURNS INDEX OF THE ELEMENT
+
+print(grocery_list.index("Bananas"))
+
+#COUNT ==> COUNTS THE NUMBER OF OCCURANCES
+
+print(grocery_list.count("Bananas"))
+
+#copy ==> RETURNS A SHALLOW COPY OF THE LIST
+
+#new_list = grocery_list.copy() OR
+
+new_list = grocery_list[:]
+
+print(new_list)
