@@ -82,6 +82,8 @@ def getFileType(fileName):
         return 'Metadata Record'
     elif 'field-meta' in fileName:
         return 'SObject/Metadata Field'
+    else:
+        return 'Unknown'
 
 def renderFiles():
     changesContainer = createTag('div', attrs = {'class': 'changes-container'})
