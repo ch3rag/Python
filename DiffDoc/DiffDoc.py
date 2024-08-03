@@ -14,12 +14,11 @@ html = '<!DOCTYPE HTML><html lang="en"><head><title>Commit Details</title></head
 styleSheets = [
     'https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css',
     'https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css',
-    'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap',
-    'Styles.css'
+    'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap'
 ]
 
 localStyleSheets = [
-    # 'Styles.css'/
+    'Styles.css'
 ]
 
 # Creates A HTML Tag
