@@ -1,0 +1,208 @@
+* {
+    font-family: 'Fira Code';
+}
+
+body, html {
+    padding: 5px;
+    line-height: 20px;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+.commit-header-table {
+    font-size: 0.9rem;
+}
+
+.commit-header-table td {
+    border: none;
+}
+
+.commit-header-table td:nth-child(1) {
+    font-weight: bold;
+}
+
+.commit-header-table td:nth-child(2) {
+    color: #00aaaa;
+    font-weight: bold;
+}
+
+.file-name {
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: oblique;
+    padding: 10px 10px;
+    background-color: rgb(45, 10, 80);
+    border-radius: 10px 10px 0px 0px;
+    z-index: -1;
+    height: 32px;
+    position: relative;
+    top: 15px;
+    color: wheat;
+}
+
+
+.old-version-text {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: tomato;
+}
+
+.new-version-text {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: greenyellow;
+}
+
+.added-line {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+}
+
+.removed-line {
+    background-color: maroon;
+    color: white;
+    font-weight: bold;
+}
+
+thead td {
+    font-weight: bold;
+}
+
+.code-table {
+    width: 100%;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.code-table thead td:nth-child(3) {
+    border-radius: 10px;
+    height: 30px;
+}
+
+.code-tables-container {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: rgb(23, 23, 23);
+    padding: 10px 0px;
+    border-radius: 0px 0px 10px 10px;
+    /* margin-bottom: 15px; */
+}
+
+.code-table td {
+    border: none;
+    padding: 0 5px !important;
+}
+
+.code-table td:nth-child(1) {
+    text-align: center;
+    width: 30px;
+}
+
+.code-table td:nth-child(2) {
+    text-align: center;
+    width: 30px;
+}
+
+pre {
+    margin: 0;
+    padding: 0px !important;
+}
+
+.changes-summary-table {
+    border: 1px solid black;
+    font-size: 0.9rem;
+}
+
+.changes-summary-table thead {
+    border-bottom: 1px solid black;
+    color: white;
+    background-color: rgb(23, 23, 23);
+}
+
+.changes-summary-table td:nth-child(2) {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+.deleted {
+    color: red
+}
+
+.added {
+    color: lightgreen
+}
+
+.modified {
+    color: darkgrey
+}
+
+.file-name > .added::before, .file-name > .deleted::before, .file-name > .modified::before {
+    content:"(";
+}
+
+.file-name > .added::after, .file-name > .deleted::after, .file-name > .modified::after {
+    content:")";
+}
+
+.deleted, .added, .modified {
+    font-weight: bold;
+}
+
+.tab {
+    background-color: gray;
+    height: 30px;
+}
+
+.tab label {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    height: 100%;
+    width: 100px;
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab label:hover {
+    background-color: #ddd;
+    background-color: rgb(23, 23, 23);
+}
+
+.tab-content {
+    width: 100%;
+}
+
+.hidden-tab {
+    font-size: 1rem;
+    color: white;
+    line-height: 40px;
+    border-radius: 0px 0px 10px 10px !important;
+}
+
+.hidden-tab::before {
+    content: ' ';
+}
+
+input {
+    display: none;
+}
+
+input + div, input + pre {
+    display: none;
+}
+
+input:checked + div, input:checked + pre {
+    display: block;
+}
